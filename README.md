@@ -16,11 +16,6 @@ This template provides a minimal setup for developing with **React Three XR**, l
    pnpm dev
    ```
 
-3. **Build for Production**:
-   ```bash
-   pnpm build
-   ```
-
 ## React Three XR
 
 This template is specifically designed for projects using [React Three XR](https://github.com/pmndrs/xr), enabling immersive WebXR experiences with React.
@@ -28,13 +23,10 @@ This template is specifically designed for projects using [React Three XR](https
 ## Project Structure
 
 - `src/`: Contains your application code.
-- `public/`: Static assets.
 
 ## Scripts
 
 - `dev`: Start the development server.
-- `build`: Build the project for production.
-- `preview`: Preview the production build.
 
 ## Resources
 
