@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# React Three XR + Vite + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup for developing with **React Three XR**, leveraging Vite's fast development environment and TypeScript support.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Install Dependencies**:
 
-## Expanding the ESLint configuration
+   ```bash
+   pnpm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Run Development Server**:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   pnpm dev
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. **Build for Production**:
+   ```bash
+   pnpm build
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## React Three XR
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This template is specifically designed for projects using [React Three XR](https://github.com/pmndrs/xr), enabling immersive WebXR experiences with React.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Project Structure
+
+- `src/`: Contains your application code.
+- `public/`: Static assets.
+
+## Scripts
+
+- `dev`: Start the development server.
+- `build`: Build the project for production.
+- `preview`: Preview the production build.
+
+## Resources
+
+- [React Three XR Documentation](https://github.com/pmndrs/xr)
+- [Vite Documentation](https://vitejs.dev/)
