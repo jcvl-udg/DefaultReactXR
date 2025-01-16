@@ -1,0 +1,39 @@
+import { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { type Mesh } from "three";
+import { createXRStore, XR, XRStoreOptions } from "@react-three/xr";
+
+function SpinningCube() {
+  const cubeRef = useRef<Mesh>(null);
+
+  // Animate rotation using useFrame
+  useFrame(() => {
+    if (cubeRef.current) {
+      cubeRef.current.rotation.x += 0.01;
+      cubeRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <mesh ref={cubeRef}>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color="blue" />
+    </mesh>
+  );
+}
+
+export default function App() {
+  const options: XRStoreOptions = {};
+  const store = createXRStore(options);
+  return (
+    <Canvas>
+      <XR store={store}>
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} />
+        <SpinningCube />
+        <OrbitControls />
+      </XR>
+    </Canvas>
+  );
+}
