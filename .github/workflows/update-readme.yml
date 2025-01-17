@@ -21,7 +21,7 @@ jobs:
       - name: Update README to main
         run: |
           # Replace "tree/ANYTHING" with "tree/main" in README.md
-          sed -i "s|tree/[^ ]*|tree/main|g" README.md
+          sed -i "s|tree/[^ ]*|tree/main)|g" README.md
 
           # Stage & commit changes (if any)
           git add README.md
