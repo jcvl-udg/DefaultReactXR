@@ -16,6 +16,12 @@ This template provides a minimal setup for developing with **React Three XR**, l
    pnpm dev
    ```
 
+## Open in Stackblitz
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/WawasCode/DefaultReactXR/tree/main)
+
+The button above will be automaticaly updatet depending on witch branch you are.
+
 ## React Three XR
 
 This template is specifically designed for projects using [React Three XR](https://github.com/pmndrs/xr), enabling immersive WebXR experiences with React.

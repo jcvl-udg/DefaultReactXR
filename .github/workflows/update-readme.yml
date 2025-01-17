@@ -1,0 +1,27 @@
+name: Update README with new branch name
+
+on:
+  create:
+    branches:
+      - "**"
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update README.md with new branch name
+        run: |
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          sed -i "s|tree/main|tree/$BRANCH_NAME|g" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update README.md with new branch name $BRANCH_NAME"
+          git push
