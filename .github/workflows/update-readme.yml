@@ -1,54 +1,35 @@
-name: Update README on Commit or Merge
+name: Update README on Merge to Main
 
 on:
-  push:
-    branches:
-      - main
-  create:
-    branches:
-      - "**"
-  workflow_dispatch:
+  pull_request:
+    types: [closed]
 
 jobs:
   update-readme:
+    if: ${{ github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v2
 
-      - name: Check for Merge Commit
-        id: check-merge
+      - name: Configure Git
         run: |
-          if git log -1 --pretty=%B | grep -i "merge pull request"; then
-            echo "merge_commit=true" >> $GITHUB_ENV
-          else
-            echo "merge_commit=false" >> $GITHUB_ENV
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Conditionally Update README.md
-        if: env.merge_commit == 'true' || github.event_name == 'create'
+      - name: Update README to main
         run: |
-          BRANCH_NAME=${GITHUB_REF#refs/heads/}
-          if [[ "$BRANCH_NAME" == "main" ]]; then
-            # Replace anything after "tree/" with "main"
-            sed -i "s|tree/[^ ]*|tree/main|g" README.md
-          else
-            # Replace anything after "tree/" with the current branch name
-            sed -i "s|tree/[^ ]*|tree/$BRANCH_NAME|g" README.md
-          fi
+          # Replace "tree/ANYTHING" with "tree/main" in README.md
+          sed -i "s|tree/[^ ]*|tree/main|g" README.md
 
-      - name: Commit Changes
-        if: env.merge_commit == 'true' || github.event_name == 'create'
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # Stage & commit changes (if any)
           git add README.md
-          git commit -m "Update README.md for branch $BRANCH_NAME" || echo "No changes to commit"
+          git commit -m "chore: Update StackBlitz link to main after merging PR" || echo "No changes to commit"
 
-      - name: Push Changes
-        if: env.merge_commit == 'true' || github.event_name == 'create'
+      - name: Push changes
         env:
           ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
         run: |
-          git push https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/${{ github.repository }}.git HEAD:${GITHUB_REF#refs/heads/}
+          # Push the newly committed change back to 'main'
+          git push https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/${{ github.repository }}.git HEAD:main
