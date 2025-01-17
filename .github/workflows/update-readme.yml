@@ -31,9 +31,11 @@ jobs:
         run: |
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
           if [[ "$BRANCH_NAME" == "main" ]]; then
-            sed -i "s|tree/{{BRANCH_NAME}}|tree/main|g" README.md
+            # Replace anything after "tree/" with "main"
+            sed -i "s|tree/[^ ]*|tree/main|g" README.md
           else
-            sed -i "s|tree/main|tree/$BRANCH_NAME|g" README.md
+            # Replace anything after "tree/" with the current branch name
+            sed -i "s|tree/[^ ]*|tree/$BRANCH_NAME|g" README.md
           fi
 
       - name: Commit Changes
