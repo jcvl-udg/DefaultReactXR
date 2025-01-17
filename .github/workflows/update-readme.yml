@@ -1,6 +1,9 @@
 name: Update README with new branch name
 
 on:
+  push:
+    branches:
+      - main
   create:
     branches:
       - "**"
