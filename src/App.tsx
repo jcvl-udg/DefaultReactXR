@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitHandles } from "@react-three/handle";
 import { type Mesh } from "three";
 import {
   createXRStore,
@@ -84,19 +84,19 @@ export default function App() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} />
         <SpinningCube />
-        <OrbitControls />
+        <OrbitHandles damping />
         <IfInSessionMode deny={["immersive-ar", "immersive-vr"]}>
-          <Fullscreen
-            flexDirection="row"
-            padding={20}
-            paddingRight={50}
-            alignItems="flex-start"
-            justifyContent="flex-end"
-            pointerEvents="listener"
-            pointerEventsOrder={3}
-          >
-            <EnterXRButton />
-          </Fullscreen>
+        <Fullscreen
+          pointerEvents="listener"
+          flexDirection="row"
+          padding={20}
+          paddingRight={50}
+           alignItems="flex-start"
+          justifyContent="flex-end"
+          pointerEventsOrder={2}
+        >
+          <EnterXRButton />
+        </Fullscreen>
         </IfInSessionMode>
       </XR>
     </Canvas>
