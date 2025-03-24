@@ -21,8 +21,8 @@ importers:
         specifier: ^6.6.9
         version: 6.6.9(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0))(@types/react@19.0.12)(react@19.0.0)(three@0.174.0)
       '@react-three/uikit':
-        specifier: ^0.8.12
-        version: 0.8.12(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0))(@types/react@19.0.12)(react@19.0.0)(three@0.174.0)
+        specifier: ^0.8.14
+        version: 0.8.14(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0))(@types/react@19.0.12)(react@19.0.0)(three@0.174.0)
       '@react-three/xr':
         specifier: ^6.6.9
         version: 6.6.9(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0))(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0)
@@ -504,14 +504,14 @@ packages:
   '@pmndrs/handle@6.6.9':
     resolution: {integrity: sha512-gZuT/6V4PX9x7XEDeFbKm1xUAXRvlO9SfEZjFUrfQCunw+1FdAVYncpvPd/a0j5ZgSJLAOZ+d3cvP5SweLdVAw==}
 
-  '@pmndrs/msdfonts@0.8.12':
-    resolution: {integrity: sha512-qxM58s1x2mCwswIxiR04jq1zF7yCsvtugTUm7l58f0ywaif75TFGEuuc+TpYroSxbAkmZXSuqyH8/AZsSQuBRg==}
+  '@pmndrs/msdfonts@0.8.14':
+    resolution: {integrity: sha512-+h4ypyalHEwG4u5Wt3H99V46QCHMXBbz1Y/yjoPh2duBkkxh9049JtSXhd0Kie/iZSZpMIxLANCF/AS3EBYRGg==}
 
   '@pmndrs/pointer-events@6.6.9':
     resolution: {integrity: sha512-EGE4GdnCwvargSFtEJjS1+drhz9jnIpm1Pcirj0JxC+KTASM4meQ0Ga/0RNA6Fd7Ms3hTCVyf5d1uE0Xm1I+hg==}
 
-  '@pmndrs/uikit@0.8.12':
-    resolution: {integrity: sha512-siWbGmlsZR/za4LGxJCgSJySiISyMeM+ePLGwUFfcQ8P01uUV7DKSbT77DsmVwkz/qPM0BTTwOl0+sRSzXgGmg==}
+  '@pmndrs/uikit@0.8.14':
+    resolution: {integrity: sha512-fbafd60BIiNGUdBMpjf9EFCA165lhB3rDEjwF9QmL9W8GjQI2RsgTumRmRNtpwpTAv2WSRRhmO87zUsvd3DfUw==}
     peerDependencies:
       three: '>=0.160'
 
@@ -600,8 +600,8 @@ packages:
       react: '>=18'
       three: '*'
 
-  '@react-three/uikit@0.8.12':
-    resolution: {integrity: sha512-5zTvVDfNJXIR/6a5gxwXvNiAsA5U8iNTyQ+Rl8QWTnfDKkt6FtxHGNTqn9BTMfbzjs8L5LWAxP4YRp7LKwYH1w==}
+  '@react-three/uikit@0.8.14':
+    resolution: {integrity: sha512-eVNmNjn2Vw4jMVSu9pWDlSDfMgHE4E3cLDstrCZls7l9fyA+GjsmYz3Tab3b957oiIKSQGTmFqW5IbPwksEkEA==}
     hasBin: true
     peerDependencies:
       '@react-three/fiber': '>=8'
@@ -1476,6 +1476,11 @@ packages:
 
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
+
+  nanoid@3.3.11:
+    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
 
   nanoid@3.3.9:
     resolution: {integrity: sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg==}
@@ -2478,13 +2483,13 @@ snapshots:
       - immer
       - react
 
-  '@pmndrs/msdfonts@0.8.12': {}
+  '@pmndrs/msdfonts@0.8.14': {}
 
   '@pmndrs/pointer-events@6.6.9': {}
 
-  '@pmndrs/uikit@0.8.12(three@0.174.0)':
+  '@pmndrs/uikit@0.8.14(three@0.174.0)':
     dependencies:
-      '@pmndrs/msdfonts': 0.8.12
+      '@pmndrs/msdfonts': 0.8.14
       '@preact/signals-core': 1.8.0
       inline-style-parser: 0.2.4
       node-html-parser: 6.1.13
@@ -2631,9 +2636,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@react-three/uikit@0.8.12(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0))(@types/react@19.0.12)(react@19.0.0)(three@0.174.0)':
+  '@react-three/uikit@0.8.14(@react-three/fiber@9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0))(@types/react@19.0.12)(react@19.0.0)(three@0.174.0)':
     dependencies:
-      '@pmndrs/uikit': 0.8.12(three@0.174.0)
+      '@pmndrs/uikit': 0.8.14(three@0.174.0)
       '@preact/signals-core': 1.8.0
       '@react-three/fiber': 9.1.0(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(three@0.174.0)
       chalk: 5.4.1
@@ -3483,6 +3488,8 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
+  nanoid@3.3.11: {}
+
   nanoid@3.3.9: {}
 
   natural-compare@1.4.0: {}
@@ -3569,28 +3576,28 @@ snapshots:
       extend: 3.0.2
       postcss: 8.4.31
 
-  postcss-import@15.1.0(postcss@8.4.31):
+  postcss-import@15.1.0(postcss@8.5.3):
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.5.3
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.10
 
-  postcss-js@4.0.1(postcss@8.4.31):
+  postcss-js@4.0.1(postcss@8.5.3):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.31
+      postcss: 8.5.3
 
-  postcss-load-config@4.0.2(postcss@8.4.31):
+  postcss-load-config@4.0.2(postcss@8.5.3):
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.7.0
     optionalDependencies:
-      postcss: 8.4.31
+      postcss: 8.5.3
 
-  postcss-nested@6.2.0(postcss@8.4.31):
+  postcss-nested@6.2.0(postcss@8.5.3):
     dependencies:
-      postcss: 8.4.31
+      postcss: 8.5.3
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -3602,13 +3609,13 @@ snapshots:
 
   postcss@8.4.31:
     dependencies:
-      nanoid: 3.3.9
+      nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
   postcss@8.4.38:
     dependencies:
-      nanoid: 3.3.9
+      nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -3864,11 +3871,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.4.31
-      postcss-import: 15.1.0(postcss@8.4.31)
-      postcss-js: 4.0.1(postcss@8.4.31)
-      postcss-load-config: 4.0.2(postcss@8.4.31)
-      postcss-nested: 6.2.0(postcss@8.4.31)
+      postcss: 8.5.3
+      postcss-import: 15.1.0(postcss@8.5.3)
+      postcss-js: 4.0.1(postcss@8.5.3)
+      postcss-load-config: 4.0.2(postcss@8.5.3)
+      postcss-nested: 6.2.0(postcss@8.5.3)
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       resolve: 1.22.10
