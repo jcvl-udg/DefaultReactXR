@@ -13,7 +13,7 @@
     "@preact/signals-react": "^3.0.1",
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.0",
-    "@react-three/handle": "^6.6.9",
+    "@react-three/handle": "^6.6.12",
     "@react-three/uikit": "^0.8.14",
     "@react-three/xr": "^6.6.9",
     "@types/three": "^0.174.0",
