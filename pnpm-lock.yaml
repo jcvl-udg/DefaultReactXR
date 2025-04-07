@@ -21,8 +21,8 @@ importers:
         specifier: ^6.6.12
         version: 6.6.12(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
       '@react-three/uikit':
-        specifier: ^0.8.14
-        version: 0.8.14(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
+        specifier: ^0.8.15
+        version: 0.8.15(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
       '@react-three/xr':
         specifier: ^6.6.9
         version: 6.6.9(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
@@ -44,7 +44,7 @@ importers:
         version: 9.23.0
       '@preact/preset-vite':
         specifier: ^2.10.1
-        version: 2.10.1(@babel/core@7.26.10)(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.0))
+        version: 2.10.1(@babel/core@7.26.10)(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.1))
       '@preact/signals-react-transform':
         specifier: ^0.5.1
         version: 0.5.1(@babel/core@7.26.10)(react@19.1.0)
@@ -56,7 +56,7 @@ importers:
         version: 19.0.4(@types/react@19.1.0)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
-        version: 4.3.4(vite@6.2.3(jiti@1.21.7)(yaml@2.7.0))
+        version: 4.3.4(vite@6.2.3(jiti@1.21.7)(yaml@2.7.1))
       eslint:
         specifier: ^9.22.0
         version: 9.22.0(jiti@1.21.7)
@@ -86,7 +86,7 @@ importers:
         version: 8.27.0(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
       vite:
         specifier: ^6.2.3
-        version: 6.2.3(jiti@1.21.7)(yaml@2.7.0)
+        version: 6.2.3(jiti@1.21.7)(yaml@2.7.1)
 
 packages:
 
@@ -512,8 +512,8 @@ packages:
   '@pmndrs/handle@6.6.12':
     resolution: {integrity: sha512-bud1e3t/7QMhCa1pOEBeplmgU9uCOKRUzf0x7i+HZ5RiYO5ujEbboMQGz+b+ZVqLk8A7aJixBju4JNHrZsoi9A==}
 
-  '@pmndrs/msdfonts@0.8.14':
-    resolution: {integrity: sha512-+h4ypyalHEwG4u5Wt3H99V46QCHMXBbz1Y/yjoPh2duBkkxh9049JtSXhd0Kie/iZSZpMIxLANCF/AS3EBYRGg==}
+  '@pmndrs/msdfonts@0.8.15':
+    resolution: {integrity: sha512-5D65OLTR3Is3cQ30GQpbL8BMux0C7FgIclOgaScCobt+Zbz2e1l1XVBLQZaVCDME/NKVkpv5ai9rOMK94Vdxfg==}
 
   '@pmndrs/pointer-events@6.6.12':
     resolution: {integrity: sha512-OLPXN1cmOemmTexnAgGKJL72df4nlpSJjzw4Frzb0QZHkgYtvmEqda/+sS9IpUO5PEYBIDHqpP6/x5YtJHyVEQ==}
@@ -521,8 +521,8 @@ packages:
   '@pmndrs/pointer-events@6.6.9':
     resolution: {integrity: sha512-EGE4GdnCwvargSFtEJjS1+drhz9jnIpm1Pcirj0JxC+KTASM4meQ0Ga/0RNA6Fd7Ms3hTCVyf5d1uE0Xm1I+hg==}
 
-  '@pmndrs/uikit@0.8.14':
-    resolution: {integrity: sha512-fbafd60BIiNGUdBMpjf9EFCA165lhB3rDEjwF9QmL9W8GjQI2RsgTumRmRNtpwpTAv2WSRRhmO87zUsvd3DfUw==}
+  '@pmndrs/uikit@0.8.15':
+    resolution: {integrity: sha512-guL1AR2AiYoaCrSL9NWo9Uwz0VNrsJYgIM9b8wv82g/XBss5nHoUeMlCHhWETjWWAog5rDDTWONISgBNenvarw==}
     peerDependencies:
       three: '>=0.160'
 
@@ -611,8 +611,8 @@ packages:
       react: '>=18'
       three: '*'
 
-  '@react-three/uikit@0.8.14':
-    resolution: {integrity: sha512-eVNmNjn2Vw4jMVSu9pWDlSDfMgHE4E3cLDstrCZls7l9fyA+GjsmYz3Tab3b957oiIKSQGTmFqW5IbPwksEkEA==}
+  '@react-three/uikit@0.8.15':
+    resolution: {integrity: sha512-rOhJpQotWWfZxkOL6l7XmoFVfWafkEXr77gY4R8FfV1xmV835Y7zS1PN6oX9+eUyYeY7eGJQef8MaIGDurZ8hg==}
     hasBin: true
     peerDependencies:
       '@react-three/fiber': '>=8'
@@ -1575,8 +1575,8 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  pirates@4.0.6:
-    resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
+  pirates@4.0.7:
+    resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
     engines: {node: '>= 6'}
 
   postcss-css-variables@0.18.0:
@@ -2053,8 +2053,8 @@ packages:
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
 
-  yaml@2.7.0:
-    resolution: {integrity: sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==}
+  yaml@2.7.1:
+    resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -2505,15 +2505,15 @@ snapshots:
       - immer
       - react
 
-  '@pmndrs/msdfonts@0.8.14': {}
+  '@pmndrs/msdfonts@0.8.15': {}
 
   '@pmndrs/pointer-events@6.6.12': {}
 
   '@pmndrs/pointer-events@6.6.9': {}
 
-  '@pmndrs/uikit@0.8.14(three@0.175.0)':
+  '@pmndrs/uikit@0.8.15(three@0.175.0)':
     dependencies:
-      '@pmndrs/msdfonts': 0.8.14
+      '@pmndrs/msdfonts': 0.8.15
       '@preact/signals-core': 1.8.0
       inline-style-parser: 0.2.4
       node-html-parser: 6.1.13
@@ -2537,17 +2537,17 @@ snapshots:
       - immer
       - react
 
-  '@preact/preset-vite@2.10.1(@babel/core@7.26.10)(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.0))':
+  '@preact/preset-vite@2.10.1(@babel/core@7.26.10)(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.1))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.10)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.10)
-      '@prefresh/vite': 2.4.7(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.0))
+      '@prefresh/vite': 2.4.7(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.1))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.10)
       debug: 4.4.0
       kolorist: 1.8.0
-      vite: 6.2.3(jiti@1.21.7)(yaml@2.7.0)
+      vite: 6.2.3(jiti@1.21.7)(yaml@2.7.1)
       vite-prerender-plugin: 0.5.6
     transitivePeerDependencies:
       - preact
@@ -2581,7 +2581,7 @@ snapshots:
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.7(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.0))':
+  '@prefresh/vite@2.4.7(preact@10.25.4)(vite@6.2.3(jiti@1.21.7)(yaml@2.7.1))':
     dependencies:
       '@babel/core': 7.26.10
       '@prefresh/babel-plugin': 0.5.1
@@ -2589,7 +2589,7 @@ snapshots:
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
       preact: 10.25.4
-      vite: 6.2.3(jiti@1.21.7)(yaml@2.7.0)
+      vite: 6.2.3(jiti@1.21.7)(yaml@2.7.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2660,9 +2660,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@react-three/uikit@0.8.14(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)':
+  '@react-three/uikit@0.8.15(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)':
     dependencies:
-      '@pmndrs/uikit': 0.8.14(three@0.175.0)
+      '@pmndrs/uikit': 0.8.15(three@0.175.0)
       '@preact/signals-core': 1.8.0
       '@react-three/fiber': 9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       chalk: 5.4.1
@@ -2901,14 +2901,14 @@ snapshots:
       '@use-gesture/core': 10.3.1
       react: 19.1.0
 
-  '@vitejs/plugin-react@4.3.4(vite@6.2.3(jiti@1.21.7)(yaml@2.7.0))':
+  '@vitejs/plugin-react@4.3.4(vite@6.2.3(jiti@1.21.7)(yaml@2.7.1))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.10)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.10)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.2.3(jiti@1.21.7)(yaml@2.7.0)
+      vite: 6.2.3(jiti@1.21.7)(yaml@2.7.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -3592,7 +3592,7 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pirates@4.0.6: {}
+  pirates@4.0.7: {}
 
   postcss-css-variables@0.18.0(postcss@8.4.31):
     dependencies:
@@ -3616,7 +3616,7 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.5.3):
     dependencies:
       lilconfig: 3.1.3
-      yaml: 2.7.0
+      yaml: 2.7.1
     optionalDependencies:
       postcss: 8.5.3
 
@@ -3863,7 +3863,7 @@ snapshots:
       glob: 10.4.5
       lines-and-columns: 1.2.4
       mz: 2.7.0
-      pirates: 4.0.6
+      pirates: 4.0.7
       ts-interface-checker: 0.1.13
 
   supports-color@7.2.0:
@@ -4044,7 +4044,7 @@ snapshots:
       source-map: 0.7.4
       stack-trace: 1.0.0-pre2
 
-  vite@6.2.3(jiti@1.21.7)(yaml@2.7.0):
+  vite@6.2.3(jiti@1.21.7)(yaml@2.7.1):
     dependencies:
       esbuild: 0.25.1
       postcss: 8.5.3
@@ -4052,7 +4052,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 1.21.7
-      yaml: 2.7.0
+      yaml: 2.7.1
 
   webgl-constants@1.1.1: {}
 
@@ -4078,7 +4078,7 @@ snapshots:
 
   yallist@3.1.1: {}
 
-  yaml@2.7.0: {}
+  yaml@2.7.1: {}
 
   yocto-queue@0.1.0: {}
 
