@@ -18,8 +18,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       '@react-three/handle':
-        specifier: ^6.6.12
-        version: 6.6.12(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
+        specifier: ^6.6.13
+        version: 6.6.13(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
       '@react-three/uikit':
         specifier: ^0.8.15
         version: 0.8.15(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
@@ -509,17 +509,11 @@ packages:
     resolution: {integrity: sha512-vsJDAkYR6qCPu+ioGScGiMYR7LvZYIXh/dlQeviqoTWNCVfKTLYD/LkNWH4Mxsv2a5vpIRc77FN5DnmK1eBggQ==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@pmndrs/handle@6.6.12':
-    resolution: {integrity: sha512-bud1e3t/7QMhCa1pOEBeplmgU9uCOKRUzf0x7i+HZ5RiYO5ujEbboMQGz+b+ZVqLk8A7aJixBju4JNHrZsoi9A==}
-
   '@pmndrs/handle@6.6.13':
     resolution: {integrity: sha512-5XkP9j8Et+C00ljq/aHbWbZFSHefMYJAi2V3xe3mCF9CnGxbAPie7OJmQ39ofUTht8B6dr6TD79XLcwgjdPpqg==}
 
   '@pmndrs/msdfonts@0.8.15':
     resolution: {integrity: sha512-5D65OLTR3Is3cQ30GQpbL8BMux0C7FgIclOgaScCobt+Zbz2e1l1XVBLQZaVCDME/NKVkpv5ai9rOMK94Vdxfg==}
-
-  '@pmndrs/pointer-events@6.6.12':
-    resolution: {integrity: sha512-OLPXN1cmOemmTexnAgGKJL72df4nlpSJjzw4Frzb0QZHkgYtvmEqda/+sS9IpUO5PEYBIDHqpP6/x5YtJHyVEQ==}
 
   '@pmndrs/pointer-events@6.6.13':
     resolution: {integrity: sha512-XSpp4SRviuI61cAoUTwe2YFMFritNgNaghPVfArQCY7+4AAJN0/DhbND3gLIigieam+hgjtXCkv+u0J0ooSHAQ==}
@@ -607,8 +601,8 @@ packages:
       react-native:
         optional: true
 
-  '@react-three/handle@6.6.12':
-    resolution: {integrity: sha512-PW+lWWVCO2aRk9HE+qCla8phd47z/bSYHOkTFgSSHjnRiGun9MDHigtkCFlKAj1xBEfz8YPiw7dmAe0L3JObNA==}
+  '@react-three/handle@6.6.13':
+    resolution: {integrity: sha512-mTpihevZYZIWXcNmuwv4ZqvU9tT2qqmwOUAaDBUJpzjvAM2rjclqKtEq5cHOJSpNsjCZjlaEplGUw7oahkV4yg==}
     peerDependencies:
       '@react-three/fiber': '>=8'
       react: '>=18'
@@ -2490,15 +2484,6 @@ snapshots:
 
   '@pkgr/core@0.2.0': {}
 
-  '@pmndrs/handle@6.6.12(@types/react@19.1.0)(react@19.1.0)':
-    dependencies:
-      '@pmndrs/pointer-events': 6.6.12
-      zustand: 4.5.6(@types/react@19.1.0)(react@19.1.0)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-      - react
-
   '@pmndrs/handle@6.6.13(@types/react@19.1.0)(react@18.3.1)':
     dependencies:
       '@pmndrs/pointer-events': 6.6.13
@@ -2508,9 +2493,16 @@ snapshots:
       - immer
       - react
 
-  '@pmndrs/msdfonts@0.8.15': {}
+  '@pmndrs/handle@6.6.13(@types/react@19.1.0)(react@19.1.0)':
+    dependencies:
+      '@pmndrs/pointer-events': 6.6.13
+      zustand: 4.5.6(@types/react@19.1.0)(react@19.1.0)
+    transitivePeerDependencies:
+      - '@types/react'
+      - immer
+      - react
 
-  '@pmndrs/pointer-events@6.6.12': {}
+  '@pmndrs/msdfonts@0.8.15': {}
 
   '@pmndrs/pointer-events@6.6.13': {}
 
@@ -2651,10 +2643,10 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@react-three/handle@6.6.12(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)':
+  '@react-three/handle@6.6.13(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)':
     dependencies:
-      '@pmndrs/handle': 6.6.12(@types/react@19.1.0)(react@19.1.0)
-      '@pmndrs/pointer-events': 6.6.12
+      '@pmndrs/handle': 6.6.13(@types/react@19.1.0)(react@19.1.0)
+      '@pmndrs/pointer-events': 6.6.13
       '@react-three/fiber': 9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       react: 19.1.0
       three: 0.175.0
